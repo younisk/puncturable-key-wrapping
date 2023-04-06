@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/PKWLibTargets.cmake")
+
+check_required_components(PKWLib)
+
+include(CMakeFindDependencyMacro)
+find_dependency(CryptoPP 8.7.0)
